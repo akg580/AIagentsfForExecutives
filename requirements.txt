@@ -1,0 +1,51 @@
+# ── Core LLM & Agent ──────────────────────────────────────────────────────────
+groq==0.9.0
+langchain==0.2.16
+langchain-community==0.2.16
+langchain-groq==0.1.9
+
+# ── Embeddings (local, free) ───────────────────────────────────────────────────
+sentence-transformers==3.0.1
+torch==2.3.1          # CPU-only; replace with torch+cu118 for GPU
+
+# ── Vector Store (local, free) ────────────────────────────────────────────────
+chromadb==0.5.5
+
+# ── Reranker (local, free) ────────────────────────────────────────────────────
+# Uses sentence-transformers cross-encoder — already included above
+
+# ── Document Loading ──────────────────────────────────────────────────────────
+pypdf==4.3.1
+python-docx==1.1.2
+openpyxl==3.1.5
+unstructured==0.14.10
+python-magic==0.4.27
+
+# ── Web Search (free tier) ────────────────────────────────────────────────────
+tavily-python==0.3.3
+
+# ── Backend ───────────────────────────────────────────────────────────────────
+fastapi==0.112.1
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+pydantic==2.8.2
+pydantic-settings==2.4.0
+
+# ── Export ────────────────────────────────────────────────────────────────────
+python-docx==1.1.2    # already listed above
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv==1.0.1
+loguru==0.7.2
+httpx==0.27.2
+aiofiles==24.1.0
+tenacity==8.5.0       # retry logic for API calls
+
+# ── Frontend ──────────────────────────────────────────────────────────────────
+streamlit==1.37.1
+requests==2.32.3
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest==8.3.2
+pytest-asyncio==0.23.8
+httpx==0.27.2

@@ -1,0 +1,44 @@
+# Environment
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Data (large files — don't commit vector DB or uploads)
+data/chroma_db/
+data/uploads/
+data/reports/
+
+# Logs
+logs/
+
+# Models cache (large, auto-downloaded)
+.cache/
+~/.cache/huggingface/
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local git recovery folder
+.git_stuck/
